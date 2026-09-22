@@ -1,0 +1,1 @@
+document.querySelector('#waitlist').addEventListener('submit', function(e){e.preventDefault(); const email=this.querySelector('input').value.trim(); document.querySelector('#wait-status').textContent=`Gracias. ${email} quedaría apuntado a la lista de espera cuando conectemos el formulario.`; this.reset();});
