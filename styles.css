@@ -16,3 +16,56 @@ footer{margin-top:42px;background:var(--g);color:#fff}.foot{min-height:135px;dis
 @media(max-width:520px){.nav{height:65px}.nav .btn.small{display:none}.hero{padding-bottom:42px}.hero h1{font-size:40px}.hero-copy>p{font-size:17px}.actions{flex-direction:column;text-align:center}.mini{gap:16px;display:grid;grid-template-columns:1fr 1fr}.hero-visual{width:min(282px,76vw);margin-top:4px}.hero-visual:before{width:260px;height:260px}.hero-visual:after{width:180px;height:180px}.section h2{font-size:33px}.flow{width:100%;border-radius:0;padding:38px 0 28px}.flow-copy{padding:0 6vw;text-align:left}.flow-copy p{font-size:16px}.flow-devices{justify-content:flex-start;overflow-x:auto;scroll-snap-type:x mandatory;padding:12px 18vw 16px;scrollbar-width:none}.flow-devices::-webkit-scrollbar{display:none}.flow-devices figure,.flow-devices figure.featured{flex:0 0 64vw;width:64vw;max-width:275px;transform:none;scroll-snap-align:center}.flow-devices>span{display:none}.concept-note{text-align:left;padding:0 6vw}.sources{padding:12px 0}.source-grid{grid-template-columns:repeat(2,1fr);gap:9px}.source-grid div{padding:15px 8px;border-radius:15px}.source-grid span{font-size:22px;margin-bottom:6px}.trust{width:100%;border-radius:0;padding:28px 6vw}.trust-grid{grid-template-columns:1fr}.dual article{padding:26px 22px}.flow-dots{display:flex}form{flex-direction:column}.partner-points{flex-direction:column;gap:8px}}
 
 .flow-dots{display:none;justify-content:center;gap:8px;margin:2px 0 14px}.flow-dots button{width:8px;height:8px;padding:0;border:0;border-radius:50%;background:#cbd8cf;transition:.2s}.flow-dots button.active{background:var(--g);transform:scale(1.15)}
+
+/* Waitlist */
+#waitlist{
+  align-items:flex-start;
+  flex-wrap:wrap;
+}
+
+#waitlist > input[type="email"]{
+  flex:1;
+  min-width:220px;
+}
+
+.waitlist-consent{
+  order:3;
+  flex:0 0 100%;
+  display:flex;
+  align-items:flex-start;
+  gap:9px;
+  margin-top:2px;
+  color:#667573;
+  font-size:12px;
+  line-height:1.45;
+  cursor:pointer;
+}
+
+.waitlist-consent input[type="checkbox"]{
+  flex:none;
+  min-width:0;
+  width:16px;
+  height:16px;
+  margin:2px 0 0;
+  padding:0;
+  accent-color:var(--g);
+  cursor:pointer;
+}
+
+.waitlist-consent span{
+  flex:1;
+}
+
+.waitlist-consent a{
+  color:var(--g);
+  font-weight:700;
+}
+
+.brevo-honeypot{
+  position:absolute !important;
+  left:-9999px !important;
+  width:1px !important;
+  height:1px !important;
+  opacity:0 !important;
+  pointer-events:none !important;
+}
