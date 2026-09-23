@@ -83,12 +83,60 @@
     <div class="eyebrow">PARA USUARIOS</div>
     <h2>Los primeros en probar YaTuyo</h2>
     <p>Estamos preparando las primeras pruebas. Déjanos tu email para saber que te interesa.</p>
-    <form id="waitlist">
-      <input type="email" required placeholder="Tu email" aria-label="Tu email">
-      <button class="btn" type="submit">Quiero probar YaTuyo →</button>
-    </form>
-    <small>El formulario está en fase de preparación y todavía no envía ni almacena tu dirección.</small>
-    <p class="status" id="wait-status"></p>
+    <form
+  id="waitlist"
+  method="POST"
+  action="https://1235cb4b.sibforms.com/serve/MUIFAGDCsYsEl2z-n52HqpPixh6PTrwhO0EXIBMBiBijloDXuydSa1r-wg_66PWWn_m_-GdjfJLKPuDgi2m83XuhezDlqMZUss_I3IJ8meWj36lpqHmMepIwdvFwxidfpzrsQnG4KVbQx1n3N3RGILE1e4Baq4xw54XON7D_UUeI5IBjZhwGOTjbBwxGELn6AxF1_7h5aoXOPK0tlw=="
+>
+  <input
+    type="email"
+    id="EMAIL"
+    name="EMAIL"
+    required
+    placeholder="Tu email"
+    aria-label="Tu email"
+    autocomplete="email"
+  >
+
+  <label class="waitlist-consent">
+    <input
+      type="checkbox"
+      id="OPT_IN"
+      name="OPT_IN"
+      value="1"
+      required
+    >
+    <span>
+      Acepto la
+      <a href="/privacidad.html" target="_blank" rel="noopener noreferrer">
+        Política de Privacidad
+      </a>
+      y que YaTuyo utilice mi email para gestionar mi participación en la
+      lista de espera y avisarme cuando el servicio esté disponible.
+    </span>
+  </label>
+
+  <input
+    type="text"
+    name="email_address_check"
+    value=""
+    class="brevo-honeypot"
+    tabindex="-1"
+    autocomplete="off"
+    aria-hidden="true"
+  >
+
+  <input type="hidden" name="locale" value="es">
+  <input type="hidden" name="html_type" value="simple">
+
+  <button class="btn" type="submit">
+    Quiero probar YaTuyo →
+  </button>
+</form>
+
+<small>
+  Te enviaremos un email para confirmar tu incorporación a la lista de espera.
+</small>
   </article>
 
   <article id="partners" class="partner">
